@@ -1,0 +1,54 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  text-align: center;
+  width: 300px;
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.info h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.info p {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.controls {
+  margin: 15px 0;
+}
+
+.icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #1db954;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0 10px;
+}
