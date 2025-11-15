@@ -24,14 +24,15 @@ h2 {
 }
 
 h3 {
-    text-align: center;
     margin-top: 20px;
-    background-color: #00468b;
+    margin-left: 10px;
+    margin-left: 20px;
 }
 
 p {
     margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 table {
@@ -60,21 +61,6 @@ th {
     padding: 5px;
 }
 
-fieldset {
-    /* background-color: #b07ff0; */
-    padding: 20px;
-    border: none;
-}
-
-button {
-    background-color: #003161;
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-    color: #310748;
-    font-weight: bold;
-}
-
 input {
     padding: 10px;
     background-color: #ffffff;
@@ -84,6 +70,7 @@ body>footer {
     color: #ffffff;
     background-color: #001d3a;
     padding: 10px;
+    text-align: center;
 }
 
 .MenuPrincipal {
@@ -135,8 +122,32 @@ body>footer {
     margin-right: 30px;
 }
 
-#galeria_fotos {
-    display: flex;
+.galeria {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#links {
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    box-shadow: 3px 3px 10px 1px #1d82e780;
+}
+.galeria img:hover {
+    transform: scale(1.05);
 }
 
 .imagem {
