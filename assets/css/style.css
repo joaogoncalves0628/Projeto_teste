@@ -1,173 +1,176 @@
+/* Importar fontes no topo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mulish:wght@300;700&family=Nunito:wght@400;800&family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #f3eaff;
-    font-family: Mulish;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  color: #f3eaff;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1E1E1E;
+  background: linear-gradient(180deg, #1E1E1E, #2a2a40);
 }
 
+/* Títulos */
 h2 {
-    margin-top: 50px;
-    text-align: center;
-    padding: 10px;
-    background-color: #00468b;
+  margin-top: 50px;
+  text-align: center;
+  padding: 12px;
+  background: linear-gradient(90deg, #00468b, #005fa3);
+  border-radius: 12px;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 
 h3 {
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-left: 20px;
+  margin: 20px;
+  font-weight: 600;
 }
 
 p {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+  margin: 10px 20px;
+  line-height: 1.6;
 }
 
+/* Tabelas */
 table {
-    background-color: #003161;
-    height: auto;
-    border-spacing: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
+  background-color: #003161;
+  border-spacing: 1px;
+  margin: 20px auto 30px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-td :nth-child(even) {
-    background-color: #003161;
+tr:nth-child(even) td {
+  background-color: #e9e3ff;
 }
 
 td {
-    padding: 10px;
-    border-spacing: 1px;
-    background-color: #f3eaff;
-    text-align: left;
+  padding: 10px;
+  background-color: #f3eaff;
+  color: #1E1E1E;
 }
 
 th {
-    background-color: #b07ff0;
-    padding: 5px;
+  background-color: #b07ff0;
+  padding: 8px;
+  color: #fff;
 }
 
+/* Inputs */
 input {
-    padding: 10px;
-    background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  color: #1E1E1E;
 }
 
-body>footer {
-    color: #ffffff;
-    background-color: #001d3a;
-    padding: 10px;
-    text-align: center;
+/* Footer */
+body > footer {
+  color: #ffffff;
+  background-color: #001d3a;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
 }
 
+/* Menu */
 .MenuPrincipal {
-    background-color: #003161;
-    padding: 10px 20px;
+  background-color: #003161;
+  padding: 10px 20px;
 }
 
 .MenuPrincipal ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .MenuPrincipal a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 4px;
-    display: block;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.MenuPrincipal li {
-    margin-right: 5%;
-    margin-left: 5%;
+.MenuPrincipal a:hover {
+  background-color: #005fa3;
 }
 
+/* Título */
 #titulo {
-    background-color: #001d3a;
-    padding: 10px;
-    color: #ffffff;
-    text-align: center;
+  background-color: #001d3a;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-family: 'Nunito', sans-serif;
 }
 
+/* Recursos adicionais */
 #recursos_adicionais {
-    display: flex;
-    list-style: none;
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
 }
 
-#recursos_adicionais li {
-    margin-right: 30px;
-}
-
+/* Galeria */
 .galeria {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-#links {
-    padding-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5em;
-}
 .galeria img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-    box-shadow: 3px 3px 10px 1px #1d82e780;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(29, 130, 231, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .galeria img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(29, 130, 231, 0.6);
 }
 
-.imagem {
-    margin: 20px;
-    border-radius: 10px;
-    width: 200px;
-    display: block;
-    max-width: 100%;
-    box-shadow: 3px 3px 20px 1px #1d82e7;
+/* Links */
+#links {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
-.imagem_descricao {
-    width: 200px;
+#links a {
+  color: #b07ff0;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.letra_grande {
-    font-size: 1.2em;
-}
+/* Responsividade */
+@media (max-width: 600px) {
+  .MenuPrincipal ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.celula_img {
-    padding: 0;
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
