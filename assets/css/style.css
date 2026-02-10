@@ -398,6 +398,7 @@ section::before {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .galeria img::before {
@@ -646,6 +647,7 @@ section::before {
 
   .galeria img {
     height: 200px;
+    object-fit: cover;
   }
 
   /* Links */
@@ -747,6 +749,7 @@ section::before {
 
   .galeria img {
     height: 120px;
+    object-fit: cover;
     border-radius: 12px;
     border: 1px solid #0066cc;
   }
